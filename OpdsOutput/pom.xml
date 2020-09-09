@@ -31,7 +31,7 @@
       <dependency>
         <groupId>org.apache.logging.log4j</groupId>
         <artifactId>log4j-core</artifactId>
-        <version>2.2</version>
+        <version>2.13.2</version>
       </dependency>
         <dependency>
             <groupId>org.jdom</groupId>
@@ -57,7 +57,7 @@
                         -->
                         <manifest>
                             <mainClass>Gui</mainClass>
-                            <packageName></packageName>
+                            <packageName/>
                             <addClasspath>true</addClasspath>
                         </manifest>
                         <manifestEntries>
@@ -79,8 +79,7 @@
                         </goals>
                         <configuration>
                             <tasks>
-                                <exec executable="${env.SVN_HOME}/bin/svnversion"
-                                      output="target/classes/version_OpdsOutput.properties" />
+                                <exec executable="${env.SVN_HOME}/bin/svnversion" output="target/classes/version_OpdsOutput.properties"/>
                             </tasks>
                         </configuration>
                     </execution>
