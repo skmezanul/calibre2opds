@@ -32,7 +32,7 @@
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
-            <version>2.1</version>
+            <version>2.14.0</version>
         </dependency>
 
         <dependency>
@@ -62,7 +62,7 @@
                         <index>true</true>
                        -->
                         <manifest>
-                            <mainClass>Gui</mainClass><packageName></packageName>
+                            <mainClass>Gui</mainClass><packageName/>
                             <addClasspath>true</addClasspath>
                         </manifest>
                         <manifestEntries>
@@ -85,8 +85,7 @@
                         </goals>
                         <configuration>
                             <tasks>
-                                <exec executable="${env.SVN_HOME}/bin/svnversion"
-                                    output="target/classes/version_OpdsOutput.properties" />
+                                <exec executable="${env.SVN_HOME}/bin/svnversion" output="target/classes/version_OpdsOutput.properties"/>
                             </tasks>
                         </configuration>
                     </execution>
